@@ -1,13 +1,48 @@
+:root{
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #FFC107;
+  --secundario: #0097A7;
+  --gris: #757575;
+}
+/*html y body sirve para normalizar el tamaño de rem*/
 html{
   font-size: 62.5%;
 }
 body{
   font-size: 16px;/*1 rem= 10 px*/
+  font-family: 'Roboto', Arial, Helvetica;
 }
-h1{
+.titulo{
     text-align: center;
-    font-size: 3.8rem;
+    font-size: 3.8rem; 
+    font-weight: 400;
   }
-h1 span{
+.titulo span{
   font-size: 2rem;
-}  
+}
+.contenedor{
+  width: 120rem;
+  margin: 0 auto;
+ 
+} 
+.navegación-principal {
+  
+  display: flex;
+  justify-content: space-between;
+}
+.navegación-principal a{
+  color:var(--blanco);
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  padding:1rem;
+  
+}
+.navegación-principal a:hover{
+  background-color: var(--primario);
+  color: var(--oscuro);
+} 
+.nav-bg{
+  background-color: var(--secundario);
+}
